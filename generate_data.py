@@ -3,8 +3,8 @@ from PIL import Image
 from tqdm import tqdm
 import os
 
-DATA_PATH = 'C:\IMPORTANT FILES\AI_stuff\GAN\kawaii_dataset'
-img_width = 64
+DATA_PATH = 'YOUR DATA FILEPATH GOES HERE'
+img_width = 64 
 img_height = 64
 channels = 3
 
@@ -19,4 +19,4 @@ training_data = np.reshape(training_data,(-1,img_width,
 training_data = training_data.astype(np.float32)
 training_data = training_data / 127.5 - 1
 print(np.shape(training_data))
-np.save("training_64_64.npy",training_data)
+np.save("training.npy",training_data)

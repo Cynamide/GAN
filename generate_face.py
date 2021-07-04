@@ -6,7 +6,7 @@ SEED_SIZE = 100
 
 noise = tf.random.normal([1,1,1, 128])
 
-generator = tf.keras.models.load_model("face_generator(final).h5")
+generator = tf.keras.models.load_model("YOUR FINAL MODEL PATH")
 
 generated_image1 = generator(noise,training=True)
 generated_image1 = ((generated_image1 + 1) * 0.5) * 255

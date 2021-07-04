@@ -5,8 +5,9 @@
 
 This is my [TensorFlow](https://www.tensorflow.org/) implementations of Wasserstein GANs with Gradient Penalty (WGAN-GP) proposed in [Improved Training of Wasserstein GANs](https://arxiv.org/pdf/1704.00028.pdf).The key insight of WGAN-GP is as follows. To enforce Lipschitz constraint in Wasserstein GAN, the original paper proposes to clip the weights of the discriminator (critic), which can lead to undesired behavior including exploding and vanishing gradients. Instead of weight clipping, this paper proposes to employ a gradient penalty term to constrain the gradient norm of the critic’s output with respect to its input, resulting the learning objective:
 <p align="center">
-    <img src="asset/loss.png" height="75"/>
+    <img src="https://i.imgur.com/B9z5TQi.png" height="75"/>
 </p>
+This enables stable training of a variety of GAN models on a wide range of datasets.
 
 ## Prerequisites
 

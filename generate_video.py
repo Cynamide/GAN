@@ -7,7 +7,7 @@ import os
 frameSize = (64, 64)
 out = cv2.VideoWriter('output_video.avi',cv2.VideoWriter_fourcc(*'mp4v'), 3, frameSize)
 noise = tf.random.normal([1,1,1, 128])
-DATA_PATH = "models"
+DATA_PATH = "MODEL FOLDER"
 for i in tqdm(range(701)):
     if i == 100:
         pass

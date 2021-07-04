@@ -3,8 +3,8 @@ from PIL import Image
 from tqdm import tqdm
 import os
 
-DATA_PATH = 'YOUR DATA FILEPATH GOES HERE'
-img_width = 64 
+DATA_PATH = 'ADD YOUR DATAFILE PATH' 
+img_width = 64
 img_height = 64
 channels = 3
 

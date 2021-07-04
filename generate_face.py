@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 import cv2
 SEED_SIZE = 100
-
+MODEL_PATH = "YOUR FINAL MODEL PATH"
 noise = tf.random.normal([1,1,1, 128])
 
-generator = tf.keras.models.load_model("YOUR FINAL MODEL PATH")
+generator = tf.keras.models.load_model(MODEL_PATH)
 
 generated_image1 = generator(noise,training=True)
 generated_image1 = ((generated_image1 + 1) * 0.5) * 255
